@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        line-height: 1.5;
+        font-weight: 400;
+        font-family: 'Squada One', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, system-ui, cursive, sans-serif;
+        @apply m-0 p-0;
+    }
+}
+
+@layer components {
+    /* MORE按鈕 */
+    .btn {
+        @apply text-center inline-block py-2 px-12 text-lg duration-300;
+    }
+
+    .btn-white {
+        @apply bg-white ring-1 ring-inset ring-black;
+    }
+
+    .btn-white:hover {
+        @apply bg-primary text-white;
+    }
+
+    /* 裝飾 */
+    .btn-decoration {
+        @apply relative;
+    }
+
+    .btn-decoration::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-left: 16px transparent solid;
+        border-bottom: 16px solid;
+        @apply hover-500 border-b-primary ;
+    }
+
+    .btn-decoration:hover::after {
+        @apply border-b-black
+    }
+
+    /* 輪播圖 */
+    .artswiper1 {
+        @apply h-[600px] w-[450px];
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        @apply bg-white rounded-none opacity-100;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        @apply bg-primary w-4;
+    }
+    /* 藝術家TAB頁 */
+    .nav-tab {
+        @apply border-b border-black;
+    }
+
+    .nav-link {
+        @apply border border-transparent bg-transparent -mb-[1px];
+    }
+
+    .nav-link.active {
+        @apply border-black border-b-gray-200;
+    }
+
+    .nav-link.active p {
+        @apply text-black;
+    }
+}
+
+@layer utilities {
+    .grid-sizer {
+        @apply w-1/4;
+    }
+
+    .grid-item {
+        @apply mb-6;
+    }
+
+    /* hover效果 */
+
+    .hover-500 {
+        @apply transition-all duration-500;
+    }
+
+    /* 小圖hover */
+    .img-wrap-min {
+        @apply relative cursor-pointer;
+    }
+
+    /* 濾鏡 */
+    .img-wrap-min::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0;
+        @apply hover-500;
+    }
+
+    .img-wrap-min::after {
+        content: "MORE";
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        color: white;
+        font-size: 18px;
+        transform: translate(50%, -50%);
+        opacity: 0;
+        @apply hover-500;
+    }
+
+    /* 裝飾 */
+    .btn-decoration-min::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-left: 16px transparent solid;
+        border-bottom: 16px solid;
+        opacity: 0;
+        @apply hover-500 border-b-primary ;
+    }
+
+    .img-card:hover .btn-decoration-min::after {
+        opacity: 1;
+    }
+
+    .img-card:hover .img-wrap-min::before {
+        opacity: 0.5;
+    }
+
+    .img-card:hover .img-wrap-min::after {
+        opacity: 1;
+    }
+
+    /* 大圖hover */
+    .img-wrap {
+        @apply relative;
+    }
+
+    /* 濾鏡 */
+    .img-wrap::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0;
+        @apply hover-500;
+    }
+
+    .img-card:hover .img-wrap::before {
+        opacity: 0.3;
+    }
+    
+}
+
+

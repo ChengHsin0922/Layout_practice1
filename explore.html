@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Squada+One&display=swap"
+        rel="stylesheet">
+    <!-- swiper套件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body class="bg-gray-200">
+    <!-- 導覽列 -->
+    <header>
+        <nav class="fixed z-20 top-0 w-full bg-gray-200 items-center border-b border-black ">
+            <div class="container flex justify-between">
+                <div class="flex items-center ml-0">
+                    <a class="-mb-4" href="/">
+                        <img class="object-contain lg:w-[130px] lg:h-[130px]" src="./images/logo.png" alt="LOGO">
+                    </a>
+                    <h3 class="-mb-9 text-5xl"><a href="/">Museum of Art</a></h3>
+                </div>
+                <ul class="flex">
+                    <li class="px-9 flex items-center lg:h-full border-l border-black">
+                        <input class="bg-inherit px-4 border-b border-1" type="text" placeholder="搜索作品名稱、藝術家名稱">
+                        <i class="fa-solid fa-magnifying-glass text-black text-xl mx-4"></i>
+                    </li>
+                    <li class="px-8 flex items-center lg:h-full border-x  border-black"><a href="/explore">探索</a></li>
+                    <li class="px-8 flex items-center lg:h-full border-r  border-black"><a href="/artist">藝術家</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-auto mt-8 pt-[110px]">
+        <section class="container mb-10">
+    <section class="container mb-10" id="artworks">
+        <div class="flex justify-between items-end border-b border-black mb-6">
+            <h2 class="text-5xl mb-2 pointer-events-none">Explore
+                <span class="text-xl font-bold pointer-events-none">探索</span>
+            </h2>
+        </div>
+        <ul class="grid">
+            <!-- width of .grid-sizer used for columnWidth -->
+            <li class="grid-sizer w-1/4"></li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art10.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">美國哥德式</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art11.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">閱讀的女子</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art12.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">邁向身分認同</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art13.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">墨西哥牛仔</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art14.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">馬賽爾‧杜尚</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art15.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">茂登旅館</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art16.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">彈鋼琴的女人</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art17.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">神奈川衝浪裏</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art18.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">愛德華‧馬奈</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art19.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">印度坐佛</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art20.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">藍與綠的音樂</p>
+                </div>
+            </li>
+            <li class="grid-item w-1/4 group">
+                <div class="p-4">
+                    <div class="bg-white p-4">
+                        <div class="relative">
+                            <img src="./images/art21.jpg" alt="">
+                            <div
+                                class="bg-black block absolute inset-0 opacity-0 bg-opacity-50 group-hover:opacity-100 hover-500">
+                                <div class="flex h-full justify-center items-center p-4">
+                                    <div class="flex flex-col justify-between ring-1 ring-white">
+                                        <p class="flex text-[18px] text-white p-4 mb-4">這幅畫作運用了細膩的色彩與流暢的筆觸，捕捉了瞬間的情感與氛圍</p>
+                                        <button class="btn btn-white btn-decoration self-end m-4">MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <p class=" mt-1 mb-4 py-4 border-b border-black font-bold">時間的凝滯</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</section>
+    </main>
+    <!-- 頁尾 -->
+    <footer class="border-t border-black pt-2">
+        <div class="border-t-4 border-black pt-4">
+            <div class="p-4">
+                <p class="text-center text-xl font-noto pointer-events-none">© Museum of Art. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- swiper套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- masonry套件 -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/75fd910e32.js" crossorigin="anonymous"></script>
+</body>
+</html>
