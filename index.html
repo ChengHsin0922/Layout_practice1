@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum of Art</title>
-    <link rel="stylesheet" href="./css/main.css">
     <!-- 字型 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Squada+One&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <!-- swiper套件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="bg-gray-200">
     <!-- 導覽列 -->
@@ -20,32 +19,32 @@
         <nav class="fixed z-20 top-0 w-full bg-gray-200 items-center border-b border-black ">
             <div class="container flex justify-between">
                 <div class="flex items-center ml-0">
-                    <a class="-mb-4" href="index.html">
-                        <img class="object-contain lg:w-[130px] lg:h-[130px]" src="./images/logo.png" alt="LOGO">
+                    <a class="-mb-4" href="/">
+                        <img class="object-contain md:pb-2  md:h-[60px] lg:w-[130px] lg:h-[130px]" src="./images/logo.png" alt="LOGO">
                     </a>
-                    <h3 class="-mb-9 text-5xl"><a href="/Layout_practice1/">Museum of Art</a></h3>
+                    <h3 class="-mb-9 md:pb-9 md:text-3xl lg:text-5xl"><a href="/">Museum of Art</a></h3>
                 </div>
                 <ul class="flex">
-                    <li class="px-9 flex items-center lg:h-full border-l border-black">
+                    <li class="px-9 flex items-center lg:h-full lg:border-l border-black">
                         <input class="bg-inherit px-4 border-b border-1" type="text" placeholder="搜索作品名稱、藝術家名稱">
                         <i class="fa-solid fa-magnifying-glass text-black text-xl mx-4"></i>
+                        <i class="fa-solid fa-bars block lg:!hidden text-black text-xl mx-4"></i>
                     </li>
-                    <li class="px-8 flex items-center lg:h-full border-x  border-black"><a href="explore.html">探索</a></li>
-                    <li class="px-8 flex items-center lg:h-full border-r  border-black"><a href="artist.html">藝術家</a></li>
+                    <li class="px-8 items-center hidden lg:flex lg:h-full border-x  border-black"><a href="/explore">探索</a></li>
+                    <li class="px-8 items-center hidden lg:flex lg:h-full border-r  border-black"><a href="/artist">藝術家</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="mx-auto mt-8 pt-[110px]">
+    <main class="mx-auto mt-8 md:pt-[20px] lg:pt-[110px]">
         <section class="container mb-10" id="exhibitions">
     <ul class="lg:flex flex-wrap">
         <li class="lg:w-full ring-1 ring-black">
             <div class="lg:flex">
                 <div class="lg:block bg-black">
-                    <h2 class="bg-black text-white flex flex-col items-center mt-6 px-8">
-                        <span
-                            class="text-5xl mb-4 vertical-rl text-orientation-mixed pointer-events-none">Exhibitions</span>
-                        <span class="vertical-rl pointer-events-none text-2xl">當 期 展 覽</span>
+                    <h2 class="bg-black text-white flex flex-row lg:flex-col items-center mt-6 px-8 py-7">
+                        <span class="text-5xl mb-4 lg:vertical-rl pointer-events-none">Exhibitions</span>
+                        <span class="lg:vertical-rl pointer-events-none text-2xl pl-4">當 期 展 覽</span>
                     </h2>
                 </div>
                 <div class="lg:flex-grow">
@@ -69,7 +68,7 @@
             </div>
         </li>
         <li class="lg:w-1/2">
-            <div class="ring-1 ring-black lg:h-full lg:flex lg:flex-row">
+            <div class="ring-1 ring-black flex flex-col-reverse lg:h-full lg:flex lg:flex-row">
                 <div
                     class="lg:w-1/2 bg-white px-3 py-8 lg:h-full lg:px-6 lg:pb-6 lg:pt-20 lg:flex lg:flex-col lg:justify-between">
                     <div class="mb-6">
@@ -90,7 +89,7 @@
             </div>
         </li>
         <li class="lg:w-1/2">
-            <div class="ring-1 ring-black lg:h-full lg:flex lg:flex-row">
+            <div class="ring-1 ring-black flex flex-col-reverse lg:h-full lg:flex lg:flex-row">
                 <div
                     class="lg:w-1/2 bg-white px-3 py-8 lg:h-full lg:px-6 lg:pb-6 lg:pt-20 lg:flex lg:flex-col lg:justify-between">
                     <div class="mb-6">
@@ -128,18 +127,20 @@
                     class="w-10 flex justify-center items-center lg:absolute lg:top-0 lg:left-0 lg:z-10 lg:bg-white lg:w-16 lg:h-16 lg:ring-1 lg:ring-black">
                     <span class="text-2xl font-paytone pointer-events-none">1</span>
                 </div>
-                <div class="relative lg:w-full lg:h-[500px] img-wrap group">
+                <div class="relative w-[100px] h-[100px] lg:w-full lg:h-[500px] img-wrap group">
                     <img src="./images/art04.jpg" alt=""
                         class="w-full h-full object-cover object-top border-b border-black">
                     <button
                         class="btn btn-white btn-decoration absolute right-0 bottom-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 hover-500">MORE</button>
                 </div>
                 <div class="flex-grow">
-                    <h3 class="text-xl px-2 py-4 font-bold border-b border-black">撐陽傘的女人-莫內夫人和她的兒子</h3>
-                </div>
-                <div class="flex p-2 justify-between">
-                    <p class="leading-[17px]">Claude Monet</p>
-                    <p class="leading-[17px]">B1-A3展區-5號位置</p>
+                    <div class="flex-grow">
+                        <h3 class="text-xl px-2 py-4 font-bold border-b border-black">撐陽傘的女人-莫內夫人和她的兒子</h3>
+                    </div>
+                    <div class="flex p-2 justify-between">
+                        <p class="leading-[17px]">Claude Monet</p>
+                        <p class="leading-[17px]">B1-A3展區-5號位置</p>
+                    </div>
                 </div>
             </div>
         </li>
@@ -149,18 +150,20 @@
                     class="w-10 flex justify-center items-center lg:absolute lg:top-0 lg:left-0 lg:z-10 lg:bg-white lg:w-16 lg:h-16 lg:ring-1 lg:ring-black">
                     <span class="text-2xl font-paytone pointer-events-none">2</span>
                 </div>
-                <div class="relative lg:w-full lg:h-[500px] img-wrap group">
+                <div class="relative w-[100px] h-[100px] lg:w-full lg:h-[500px] img-wrap group">
                     <img src="./images/art05.jpg" alt=""
                         class="w-full h-full object-cover object-top border-b border-black">
                     <button
                         class="btn btn-white btn-decoration absolute right-0 bottom-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 hover-500">MORE</button>
                 </div>
                 <div class="flex-grow">
-                    <h3 class="text-xl px-2 py-4 font-bold border-b border-black">聖雷札火車站</h3>
-                </div>
-                <div class="flex p-2 justify-between">
-                    <p class="leading-[17px]">Claude Monet</p>
-                    <p class="leading-[17px]">B1-B1展區-第12號位置</p>
+                    <div class="flex-grow">
+                        <h3 class="text-xl px-2 py-4 font-bold border-b border-black">聖雷札火車站</h3>
+                    </div>
+                    <div class="flex p-2 justify-between">
+                        <p class="leading-[17px]">Claude Monet</p>
+                        <p class="leading-[17px]">B1-B1展區-第12號位置</p>
+                    </div>
                 </div>
             </div>
         </li>
@@ -170,18 +173,20 @@
                     class="w-10 flex justify-center items-center lg:absolute lg:top-0 lg:left-0 lg:z-10 lg:bg-white lg:w-16 lg:h-16 lg:ring-1 lg:ring-black">
                     <span class="text-2xl font-paytone pointer-events-none">3</span>
                 </div>
-                <div class="relative lg:w-full lg:h-[500px] img-wrap group">
+                <div class="relative w-[100px] h-[100px] lg:w-full lg:h-[500px] img-wrap group">
                     <img src="./images/art06.jpg" alt="" class="w-full h-full object-cover object-top">
                     <button
                         class="btn btn-white btn-decoration absolute right-0 bottom-0 opacity-0 invisible group-hover:visible group-hover:opacity-100 hover-500">MORE</button>
                 </div>
                 <div class="flex-grow">
-                    <h3 class="flex flex-wrap text-xl px-2 py-4 font-bold border-b border-black">睡蓮 1919
-                    </h3>
-                </div>
-                <div class="flex flex-wrap p-2 justify-between">
-                    <p class="leading-[17px]">Claude Monet</p>
-                    <p class="leading-[17px]">B1-C2展區-第7號位置</p>
+                    <div class="flex-grow">
+                        <h3 class="flex flex-wrap text-xl px-2 py-4 font-bold border-b border-black">睡蓮 1919
+                        </h3>
+                    </div>
+                    <div class="flex flex-wrap p-2 justify-between">
+                        <p class="leading-[17px]">Claude Monet</p>
+                        <p class="leading-[17px]">B1-C2展區-第7號位置</p>
+                    </div>
                 </div>
             </div>
         </li>
@@ -258,23 +263,23 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img class="artswiper1" src="./images/artist01.jpg" />
+                <img class="artswiper1 max-w-[744px] h-[700px] w-full object-cover" src="./images/artist01.jpg" />
                 <h3 class="leading-[85px] absolute top-6 left-6 text-white text-5xl">Rembrandt van Rijn</h3>
             </div>
             <div class="swiper-slide">
-                <img class="artswiper1" src="./images/artist02.jpg" />
+                <img class="artswiper1 max-w-[744px] h-[700px] w-full object-cover" src="./images/artist02.jpg" />
                 <h3 class="leading-[85px] absolute top-6 left-6 text-white text-5xl">Salvador Dalí</h3>
             </div>
             <div class="swiper-slide">
-                <img class="artswiper1" src="./images/artist03.jpg" />
+                <img class="artswiper1 max-w-[744px] h-[700px] w-full object-cover" src="./images/artist03.jpg" />
                 <h3 class="leading-[85px] absolute top-6 left-6 text-white text-5xl">Vincent van Gogh</h3>
             </div>
             <div class="swiper-slide">
-                <img class="artswiper1" src="./images/artist04.jpg" />
+                <img class="artswiper1 max-w-[744px] h-[700px] w-full object-cover" src="./images/artist04.jpg" />
                 <h3 class="leading-[85px] absolute top-6 left-6 text-white text-5xl">Edgar Degas</h3>
             </div>
             <div class="swiper-slide">
-                <img class="artswiper1" src="./images/artist05.jpg" />
+                <img class="artswiper1 max-w-[744px] h-[700px] w-full object-cover" src="./images/artist05.jpg" />
                 <h3 class="leading-[85px] absolute top-6 left-6 text-white text-5xl">Jean Francois Millet</h3>
             </div>
         </div>
@@ -588,14 +593,14 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="./js/main.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/75fd910e32.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- swiper套件 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- masonry套件 -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/75fd910e32.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
