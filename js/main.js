@@ -6,7 +6,7 @@ $(function() {
         loop: true,
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         initialSlide: 2,
         coverflowEffect: {
             rotate: 40, 
@@ -17,6 +17,14 @@ $(function() {
         },
         pagination: {
             el: ".swiper-pagination",
+        },
+        breakpoints: {
+            1024: {
+                centeredSlides: true,
+                slidesPerView: 3,
+                rotate: 0,
+                depth: 0,
+            },
         },
     });
     // masonry卡片
